@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -59,7 +60,7 @@
             <div class="seccionTarjetaTitulo">
                 <h2>UN EQUIPO DE PERSONAS <strong style="color: #F23E76;">CUALIFICADAS</strong> Y SIEMPRE <strong style="color: #45BF45;">ACTUALIZADAS</strong></h2>
             </div>
-            <div class="card">
+            <div class="cardBarbara">
                 <div class="front">
                     <div class="frontTexto">
                         <h3>BÁRBARA MARTÍNEZ GIRALDA</h3>
@@ -88,7 +89,185 @@
                 </div>
             </div>
         </div>
+        <div class="seccionTarjetas">
+        </div>
+        <div class="modalVideo">
+            
+        </div>
     </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#dfffdf" fill-opacity="1" d="M0,32L120,69.3C240,107,480,181,720,192C960,203,1200,149,1320,122.7L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+    <section class="seccionServicios">
+        <h2 class="gradient-text">SERVICIOS</h2>
+        <div class="serviciosLista">
+            <div class="servicio psicologia" >
+                <div class="servicioTextoImagen">
+                    <h3>PSICOLOGÍA</h3>
+                    <img src="./img/psicologia.png" alt="psicologia">
+                </div>
+                <div class="parrafoOculto">
+                    <ul>
+                        <li>Intervención psicológica infanto-juvenil y adultos</li>
+                        <li>Problemas de conducta</li>
+                        <li>Habilidades sociales</li>
+                        <li>Regulación emocional</li>
+                        <li>Terapia de pareja</li>
+                        <li>Terapia familiar</li>
+                        <li>Autoestima</li>
+                        <li>Ansiedad</li>
+                        <li>Depresión</li>
+                        <li>Fobias</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicio pedagogia" >
+                <div class="servicioTextoImagen">
+                    <h3>PEDAGOGÍA</h3>
+                    <img src="./img/pedagogia.png" alt="PEDAGOGÍA">
+                </div>
+                <div class="parrafoOculto">
+                    <ul>
+                        <li>Diagnóstico e intervención en dificultades del aprendizaje y trastornos del neurodesarrollo.</li>
+                        <li>Estimulación temprana</li>
+                        <li>TDAH</li>
+                        <li>Dislexia / Discalculia</li>
+                        <li>Disgrafía</li>
+                        <li>Disortografía</li>
+                        <li>TEA</li>
+                        <li>Técnicas de estudio</li>
+                        <li>Orientación vocacional</li>
+                        <li>Altas capacidades</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicio logopedia" >
+                <div class="servicioTextoImagen">
+                    <h3>LOGOPEDIA</h3>
+                    <img src="./img/Logopedia.png" alt="LOGOPEDIA">
+                </div>
+                <div class="parrafoOculto">
+                    <ul>
+                        <li>Diagnóstico e intervención en trastornos del habla y del lenguaje</li>
+                        <li>Intervención en el aprendizaje y dificultades de la lecto-escritura</li>
+                        <li>Terapia miofuncional (deglución atípica)</li>
+                        <li>Rehabilitación de voz</li>
+                        <li>Estimulación temprana</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicio terapiaOcupacional" >
+                <div class="servicioTextoImagen">
+                    <h3>TERAPIA OCUPACIONAL</h3>
+                    <img src="./img/terapiaOcupacional.png" alt="TERAPIA OCUPACIONAL">
+                </div>
+                <div class="parrafoOculto">
+                    <ul>
+                        <li>Estimulación temprana</li>
+                        <li>Integración sensorial</li>
+                        <li>Autonomía en las actividades de la vida diaria</li>
+                        <li>Habilidades motoras, equilibrio y coordinación</li>
+                        <li>Psicomotricidad</li>
+                        <li>Juego simbólico</li>
+                        <li>Adaptaciones del entorno</li>
+                        <li>Habilidades grafomotrices</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicio otrosServicios" >
+                <div class="servicioTextoImagen">
+                    <h3>OTROS SERVICIOS</h3>
+                    <img src="./img/otrosServicios.png" alt="OTROS SERVICIOS">
+                </div>
+                <div class="parrafoOculto">
+                    <ul>
+                        <li>Formación en equipos docentes </li>
+                        <li>Orientación familiar</li>
+                        <li>Escuela de padres</li>
+                        <li>Talleres de sensibilización</li>
+                        <li>Talleres de habilidades sociales</li>
+                        <li>Asesoramiento y coordinación con centros educativos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seccionNuestroEspacio">
+        <h2 class="gradient-text">NUESTRO ESPACIO</h2>
+        <div id="carouselExample" class="carousel slide carousel-dark carrouselContenedor">
+            <div class="carousel-inner">
+              <div class="carousel-item active imagenItem" style="background-image: url(./img/espacioUnicsWeb-21.jpg);">
+              </div>
+              <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-1.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-2.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-3.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-4.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-5.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-6.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-7.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-8.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-11.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-12.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-13.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-14.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-15.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-16.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-17.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-18.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-19.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-22.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-23.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-24.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-25.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-26.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-27.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-28.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-29.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-32.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-33.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-34.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-37.jpg);">
+                </div>
+                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-38.jpg);">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="./app.js"></script>
 </body>

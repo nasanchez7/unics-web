@@ -163,7 +163,7 @@ nav ul li a{
     font-family: 'Gochi Hand', cursive;
 }
 
-.card{
+.cardBarbara{
     position: relative;
     width: 100%;
     height: 400px;
@@ -171,7 +171,7 @@ nav ul li a{
 }
 
 
-.card .front{
+.cardBarbara .front{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -182,7 +182,7 @@ nav ul li a{
 box-shadow: 0px 0px 15px -8px #000000;
 }
 
-.card .back{
+.cardBarbara .back{
     position: absolute;
     width: 100%;
     height: max-content;
@@ -251,16 +251,275 @@ box-shadow: 0px 0px 15px -8px #000000;
     text-align: center;
 }
 
-.card:hover .front{
+.cardBarbara:hover .front{
     transform: perspective(500px) rotateY(180deg);
 }
 
-.card:hover{
+.cardBarbara:hover{
     margin-top: 50px;
 }
 
-.card:hover .back{
+.cardBarbara:hover .back{
     transform: perspective(500px) rotateY(360deg);
+}
+
+.seccionTarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.profesionalCard{
+    position: relative;
+    width: 350px;
+    height: 370px;
+    border-radius: 50px;
+}
+
+
+.profesionalCard .front{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 0.5s all;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 15px -8px #000000; 
+box-shadow: 0px 0px 15px -8px #000000;
+    border-radius: 50px;
+    padding: 0px 0px!important;
+}
+
+.profesionalCard .front img{
+    position: relative!important;
+    width: 100%;
+    height: 80%;
+    margin-left: 0px!important;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.profesionalCard .back{
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+    backface-visibility: hidden;
+    transition: 0.5s all;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 15px -8px #000000; 
+    box-shadow: 0px 0px 15px -8px #000000;
+    border-radius: 50px;
+    padding: 0px 0px!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.profesionalCard .back i{
+    font-size: 60px;
+    color: #F23E76;
+}
+
+.profesionalCard:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.profesionalCard:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.modalVideo{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.modalVideo iframe{
+    width: 560px!important;
+    height: 315px!important;
+}
+
+.botonCerrar i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    color: white;
+    margin-right: 80px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.seccionServicios{
+    display: flex;
+    flex-direction: column;
+}
+
+.gradient-text {
+    background: linear-gradient(#00cd00,#ff2373);
+    -webkit-background-clip: text;
+    color: transparent; 
+    text-align: center;
+}
+  
+.gradient-text{
+    font-size: 50px;
+}
+
+.serviciosLista{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
+}
+
+.seccionServicios h2{
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10%;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    transition: all 0.5s;
+}
+
+.servicioTextoImagen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.servicioTextoImagen h3{
+    font-size: 34px;
+}
+
+.servicioTextoImagen img{
+    height: 100px;
+}
+
+.parrafoOculto{
+    display: none;
+}
+
+.parrafoOculto ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.servicio:hover{
+    border-radius: 50px;
+}
+
+.servicio:hover h3{
+    transition: all 0.5s;
+    scale: 1.2;
+}
+
+.servicio:hover img{
+    transition: all 0.5s;
+    scale: 1.2;
+}
+
+.servicio:hover .parrafoOculto{
+    display: unset;
+}
+
+.psicologia{
+    background-color: #fdb4ff7e;
+}
+
+.psicologia:hover{
+    background-color: #FDB4FF;
+    transition: all 0.5s;
+}
+
+.pedagogia{
+    background-color: #86E9FF7e;
+}
+
+.pedagogia:hover{
+    background-color: #86E9FF;
+    transition: all 0.5s;
+}
+
+.logopedia{
+    background-color: #87FFDB7e;
+}
+
+.logopedia:hover{
+    background-color: #87FFDB;
+    transition: all 0.5s;
+}
+
+.terapiaOcupacional{
+    background-color: #C9C0FF7e;
+}
+
+.terapiaOcupacional:hover{
+    background-color: #C9C0FF;
+    transition: all 0.5s;
+}
+
+.otrosServicios{
+    background-color: #EDFF7E7e;
+}
+
+.otrosServicios:hover{
+    background-color: #EDFF7E;
+    transition: all 0.5s;
+}
+
+.seccionNuestroEspacio{
+    margin-top: 80px;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccionNuestroEspacio h2{
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.carousel {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+}
+
+.carousel-inner {
+    border-radius: 50px;
+}
+
+.imagenItem{
+    width: 100%;
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 @media screen and (max-width: 1573px){
