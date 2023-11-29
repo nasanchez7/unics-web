@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(223,255,223);
+    background: linear-gradient(90deg, rgba(223,255,223,1) 0%, rgba(255,221,233,1) 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menuMobile{
+    display: none;
+}
+
+.botonMenu{
+    display: none;
+}
+
+.botonMenu i{
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.header{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+
+}
+
+.header img{
+    width: 300px;
+    height: 200px;
+}
+
+.headerTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+
+}
+
+.headerTexto h1{
+    color: black;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.headerTexto span{
+    color: #F23E76;
+    font-weight: 300!important;
+}
+
+@media screen and (max-width: 697px){
+    .menuMobile{
+        display: unset;
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        margin-top: 78px;
+        z-index: 101;
+        -webkit-box-shadow: 0px 16px 15px 0px rgba(0,0,0,0.28); 
+        box-shadow: 0px 16px 15px 0px rgba(0,0,0,0.28);
+        transition: 0.5s all;
+        transform: translateX(-100vw);
+    }
+    .menuMobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        list-style: none;
+        gap: 50px;
+    }
+    .menuMobile ul li{
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .menuMobile ul li a{
+        color: black;
+        text-decoration: none;
+
+    }
+    .botonMenu{
+        display: unset;
+    }
+    .menuDesktop{
+        display: none;
+    }
+}
