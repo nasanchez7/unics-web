@@ -16,7 +16,9 @@
 <body>
     <header>
         <nav>
-            <img src="./img/logo.png" alt="Logo Unics">
+            <a href="#inicio">
+                <img src="./img/logo.png" alt="Logo Unics">
+            </a>
             <ul class="menuDesktop">
                 <li><a href="#conocenos">Conócenos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -36,7 +38,7 @@
             </ul>
         </div>
     </header>
-    <div class="header">
+    <div class="header" id="inicio">
         <div class="headerTexto">
             <h1>Éste es tu <br>espacio <span>Únics</span>,<br>
                 un lugar en el <br>que mejorar <br>
@@ -49,14 +51,14 @@
         </div>
     </div>
     <svg class="waveUno" style="margin-bottom: -84px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffdde9" fill-opacity="1" d="M0,224L80,208C160,192,320,160,480,133.3C640,107,800,85,960,80C1120,75,1280,85,1360,90.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    <section class="seccionUno">
+    <section class="seccionUno" >
         <div class="videoTexto">
             <div class="tituloSeccionUno">
                 <h2>Bienvenidos al centro <strong><span>Ú</span>nics</strong></h2>
             </div>
             <iframe src="https://www.youtube.com/embed/V-7p_hCO63k?si=K7dFcAe9t1Wq5Ifi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <div class="seccionTarjeta">
+        <div class="seccionTarjeta" id="conocenos">
             <div class="seccionTarjetaTitulo">
                 <h2>UN EQUIPO DE PERSONAS <strong style="color: #F23E76;">CUALIFICADAS</strong> Y SIEMPRE <strong style="color: #45BF45;">ACTUALIZADAS</strong></h2>
             </div>
@@ -96,7 +98,7 @@
         </div>
     </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#dfffdf" fill-opacity="1" d="M0,32L120,69.3C240,107,480,181,720,192C960,203,1200,149,1320,122.7L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
-    <section class="seccionServicios">
+    <section class="seccionServicios" id="servicios">
         <h2 class="gradient-text">SERVICIOS</h2>
         <div class="serviciosLista">
             <div class="servicio psicologia" >
@@ -190,7 +192,7 @@
             </div>
         </div>
     </section>
-    <section class="seccionNuestroEspacio">
+    <section class="seccionNuestroEspacio" id="nuestroespacio">
         <h2 class="gradient-text">NUESTRO ESPACIO</h2>
         <div id="carouselExample" class="carousel slide carousel-dark carrouselContenedor">
             <div class="carousel-inner">
@@ -267,6 +269,43 @@
             </button>
           </div>
     </section>
+    <footer class="seccionContacto" id="contacto">
+        <h2 class="gradient-text">CONTACTO</h2>
+        <div class="agradecimientoContainer">
+            <div class="agradecimientoTexto">
+                <h3>¡Gracias por visitar nuestra página! </h3>
+                <p>No dudes en contactar con nosotros a través de los siguientes medios</p>
+            </div>
+            <div class="imagenContainer">
+                <img src="./img/contactovector.png" alt="contacto">
+            </div>
+        </div>
+        <div class="cardsContacto">
+            <div class="cardContacto">
+                <i class='bx bxs-location-plus'></i>
+                <strong>Avenida Artal de Foces, 196.</strong>
+                <small>ALCÀSSER</small>
+            </div>
+            <div class="cardContacto">
+                <i class='bx bxs-phone' ></i>
+                <strong>¿Quieres comunicarte con nosotros?</strong>
+                <small>962 324 817</small>
+            </div>
+            <div class="cardContacto">
+                <i class='bx bx-envelope'></i>
+                <strong>¿Prefieres escribirnos?</strong>
+                <small>info@unicspedagogia.com</small>
+            </div>
+        </div>
+        <p class="mensajeFinal">Tus comentarios y sugerencias son importantes para nosotros. Estamos comprometidos a proporcionarte un servicio excepcional, y tu opinión nos ayuda a mejorar continuamente. No dudes en compartir tus pensamientos con nosotros.
+            Queremos escucharte y responder a tus necesidades. Gracias por elegirnos y confiar en nosotros.
+            <br>¡Esperamos verte pronto!</p>
+        <div class="redesContainer">
+            <a href=""><i class='bx bxl-instagram' ></i></i></a>
+            <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+            <a href=""><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="./app.js"></script>

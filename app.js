@@ -3,7 +3,7 @@ const botonMenu = document.getElementById("botonMenu")
 let isOpen = false
 
 botonMenu.addEventListener("click", () => {
-   
+   console.log("click")
     if(isOpen){
         menuMobile.style.transform = "translateX(-100vw)"
         isOpen = false
