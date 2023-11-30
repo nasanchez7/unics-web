@@ -881,5 +881,8 @@ box-shadow: 0px 0px 15px -8px #000000;
     .cardBarbara .back h3 {
         font-size: 13px;
     }
+    .servicioTextoImagen h3 {
+        font-size: 24px;
+    }
 }
 
