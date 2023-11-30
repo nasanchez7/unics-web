@@ -1,6 +1,15 @@
 const menuMobile = document.getElementById("menuMobile")
 const botonMenu = document.getElementById("botonMenu")
+const logo = document.getElementById("logo")
+
 let isOpen = false
+
+logo.addEventListener("click", () => {
+   if(isOpen){
+      menuMobile.style.transform = "translateX(-100vw)"
+      isOpen = false
+  }
+})
 
 botonMenu.addEventListener("click", () => {
    console.log("click")
@@ -122,4 +131,19 @@ if(profesionales){
    })
 }
 
-
+ScrollReveal({ reset: true });
+ScrollReveal().reveal('.tituloSeccionUno', { delay: 350 });
+ScrollReveal().reveal('.seccionTarjetaTitulo', { delay: 350 });
+ScrollReveal().reveal('.seccionTarjetas', { delay: 350 });
+ScrollReveal().reveal('.servicioTitulo', { delay: 350 });
+ScrollReveal().reveal('.psicologia', { delay: 350 });
+ScrollReveal().reveal('.pedagogia', { delay: 350 });
+ScrollReveal().reveal('.logopedia', { delay: 350 });
+ScrollReveal().reveal('.terapiaOcupacional', { delay: 350 });
+ScrollReveal().reveal('.otrosServicios', { delay: 350 });
+ScrollReveal().reveal('.tituloNuestroEspacio', { delay: 350 });
+ScrollReveal().reveal('.carousel', { delay: 350 });
+ScrollReveal().reveal('.tituloContacto', { delay: 350 });
+ScrollReveal().reveal('.agradecimientoTexto', { delay: 350 });
+ScrollReveal().reveal('.cardsContacto', { delay: 350 });
+ScrollReveal().reveal('.mensajeFinal', { delay: 350 });
