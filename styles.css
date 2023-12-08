@@ -1014,6 +1014,30 @@ box-shadow: 0px 0px 15px -8px #000000;
     }
 }
 
+@media screen and (max-width: 820px){
+    .servicioTextoImagen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .botonServicio {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .botonServicio button {
+        margin-bottom: 20px;
+    }
+    .servicioTextoImagen h3 {
+        font-size: 34px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 707px){
     .seccionUno {
         padding: 60px 5%;
