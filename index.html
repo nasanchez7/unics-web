@@ -16,7 +16,7 @@
 <body>
     <header class="">
         <nav>
-            <a href="#inicio" id="logo">
+            <a id="logo">
                 <img src="./img/logo.png" alt="Logo Unics">
             </a>
             <ul class="menuDesktop">
@@ -38,7 +38,7 @@
             </ul>
         </div>
     </header>
-    <div class="header" id="inicio">
+    <div class="header">
         <div class="headerTexto animate__animated animate__fadeInDown">
             <h1>Éste es tu <br>espacio <span>Únics</span>,<br>
                 un lugar en el <br>que mejorar <br>
@@ -65,29 +65,46 @@
             <div class="cardBarbara">
                 <div class="front">
                     <div class="frontTexto">
-                        <h3>BÁRBARA MARTÍNEZ GIRALDA</h3>
-                        <small>Directora de Únics Pedagogia</small>
-                        <ul>
-                            <li>Licenciada en Pedagogía. Nº colegiada 1.054</li>
-                            <li>Máster en Diagnóstico e Intervención en las Dificultades del Aprendizaje</li>
-                            <li>Postgrado de Intervención en las Dificultades de Lectura – Dislexia</li>
-                            <li>Acreditada para la Evaluación Diagnóstica de Autismo (ADOS-2 y ADI-R)</li>
-                            <li>Experta en Metodología de Inteligencias Múltiples.</li>
-                        </ul>
+                        <div class="infoBarbara">
+                            <h3 class="ocultarBarbara">BÁRBARA MARTÍNEZ GIRALDA</h3>
+                            <small class="ocultarBarbara">Directora de Únics Pedagogía</small>
+                            <ul class="ocultarBarbara">
+                                <li>Licenciada en Pedagogía. Nº colegiada 1.054</li>
+                                <li>Máster en Diagnóstico e Intervención en las Dificultades del Aprendizaje</li>
+                                <li>Postgrado de Intervención en las Dificultades de Lectura – Dislexia</li>
+                                <li>Acreditada para la Evaluación Diagnóstica de Autismo (ADOS-2 y ADI-R)</li>
+                                <li>Experta en Metodología de Inteligencias Múltiples.</li>
+                            </ul>
+                            <p class="informacionBarbara">
+                                ¡Hola! Gracias por visitar nuestro espacio online de Únics. 
+                                Únics es un centro donde no distinguimos entre personas 
+                                más o menos inteligentes o mas o menos capaces. Para nosotras, todos los niños son únicos aunque partan de puntos diferentes. A partir de ahí, nos ponemos manos 
+                                a la obra y damos igualdad de oportunidades a cada persona respetando 
+                                sus características y sus ritmos. Nuestro objetivo es que todos los usuarios que vienen al centro se sientan capaces, felices y 
+                                motivados. Por eso trabajamos en un ambiente de 
+                                optimismo y ponemos mucho cariño y profesionalidad a lo que hacemos. 
+                                Yo me encargo de la dirección del gabinete y ejerzo como pedagoga 
+                                terapéutica, pero estoy acompañada de un gran equipo multidisciplinar de profesionales 
+                                para ofrecer todos los servicios de Únics. ¡Os esperamos!
+                            </p>
+                        </div>
+                            
+                        <div class="botonesBarbara">
+                            <div class="botonBarbara" id="verVideoBarbara">
+                                <strong>Ver video</strong>
+                                <i class='bx bx-play-circle'></i>
+                            </div>
+                            <div class="botonBarbara" id="verInfoBarbara">
+                                <strong>Ver mas informacion</strong>
+                                <i class='bx bx-info-circle'></i>
+                            </div>
+                            <div class="botonBarbara botonVolver" id="volverBarbara">
+                                <strong>Volver</strong>
+                                <i class='bx bx-arrow-back' ></i>
+                            </div>
+                        </div>
                     </div>
                     <img src="./img/Barbara.png" alt="BarbaraProfesional">
-                </div>
-                <div class="back">
-                    <h3>¡Hola! Gracias por visitar nuestro espacio online de Únics. 
-                        Únics es un centro donde no distinguimos entre personas 
-                        más o menos inteligentes o mas o menos capaces. Para nosotras, todos los niños son únicos aunque partan de puntos diferentes. A partir de ahí, nos ponemos manos 
-                        a la obra y damos igualdad de oportunidades a cada persona respetando 
-                        sus características y sus ritmos. Nuestro objetivo es que todos los usuarios que vienen al centro se sientan capaces, felices y 
-                        motivados. Por eso trabajamos en un ambiente de 
-                        optimismo y ponemos mucho cariño y profesionalidad a lo que hacemos. 
-                        Yo me encargo de la dirección del gabinete y ejerzo como pedagoga 
-                        terapéutica, pero estoy acompañada de un gran equipo multidisciplinar de profesionales 
-                        para ofrecer todos los servicios de Únics. ¡Os esperamos!</h3>
                 </div>
             </div>
         </div>
@@ -196,67 +213,221 @@
         <h2 class="gradient-text tituloNuestroEspacio">NUESTRO ESPACIO</h2>
         <div id="carouselExample" class="carousel slide carousel-dark carrouselContenedor">
             <div class="carousel-inner">
-              <div class="carousel-item active imagenItem" style="background-image: url(./img/espacioUnicsWeb-21.jpg);">
-              </div>
-              <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-1.jpg);">
+                <div class="carousel-item active imagenItem" >
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="./img/espacioUnicsWeb-0.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-2.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-01.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-3.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-2.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-4.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-02.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-5.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-3.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-6.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-03.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-7.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-4.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-8.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-5.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-11.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-05.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-12.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-6.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-13.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-06.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-14.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-7.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-15.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-11.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-16.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-011.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-17.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-13.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-18.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-013.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-19.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-014.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-22.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-15.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-23.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-16.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-24.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-19.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-25.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-22.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-26.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-27.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-27.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-28.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-28.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-29.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-29.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-32.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-32.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-33.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-33.jpg);">
-                </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-34.jpg);">
-                </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-37.jpg);">
-                </div>
-                <div class="carousel-item imagenItem" style="background-image: url(./img/espacioUnicsWeb-38.jpg);">
+                <div class="carousel-item imagenItem">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img class="imagenCarrousel" src="../img/espacioUnicsWeb-37.jpg" alt="" style="
+                            height: 100%;
+                            border-radius: 50px;
+                        ">
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

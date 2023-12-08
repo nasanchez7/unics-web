@@ -5,6 +5,11 @@ const logo = document.getElementById("logo")
 let isOpen = false
 
 logo.addEventListener("click", () => {
+   window.scrollX = 0;
+   window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+  });
    if(isOpen){
       menuMobile.style.transform = "translateX(-100vw)"
       isOpen = false
@@ -32,9 +37,60 @@ if(links){
     }
 }
 
+const botonVideoBarbara = document.getElementById("verVideoBarbara")
+
+botonVideoBarbara.addEventListener('click', () => {
+   const modalVideo = document.querySelector(".modalVideo")
+   modalVideo.style.backgroundColor = "#00000082"
+   modalVideo.style.zIndex = "200"
+   modalVideo.style.opacity = "1"
+   modalVideo.innerHTML = `
+         <div class="botonCerrar" id="cerrarModal">
+            <i class='bx bx-x-circle'></i>
+         </div>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/hMlASG2HJm4?si=bl4GNtW_gMPcWPpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+   const botonCerrar = document.getElementById("cerrarModal")
+   botonCerrar.addEventListener("click", () => {
+      modalVideo.style.backgroundColor = "#00000000"
+      modalVideo.style.zIndex = "-200"
+      modalVideo.style.opacity = "0"
+      modalVideo.innerHTML = ""
+   })
+})
+
+const verInfoBarbara = document.getElementById("verInfoBarbara")
+const volverBarbara = document.getElementById("volverBarbara")
+
+verInfoBarbara.addEventListener('click', () => {
+   console.log("click")
+   const informacionBarbara = document.querySelector(".informacionBarbara")
+   const infoBarbara = document.querySelectorAll(".ocultarBarbara")
+   infoBarbara.forEach((item) => {
+      item.style.display = "none"
+   })
+   verInfoBarbara.classList.remove('activarBotonInfo')
+   verInfoBarbara.classList.add('desactivarBotonInfo')
+   volverBarbara.classList.add('activarBotonVolver')
+   informacionBarbara.style.display = "unset"
+})
+
+
+volverBarbara.addEventListener('click', () => {
+   const infoBarbara = document.querySelectorAll(".ocultarBarbara")
+   infoBarbara.forEach((item) => {
+      item.style.display = "flex"
+   })
+   const informacionBarbara = document.querySelector(".informacionBarbara")
+   informacionBarbara.style.display = "none"
+   verInfoBarbara.classList.remove('desactivarBotonInfo')
+   verInfoBarbara.classList.add('activarBotonInfo')
+   volverBarbara.classList.remove('activarBotonVolver')
+   volverBarbara.classList.add('desactivarBotonVolver')
+})
+
 const profesionales = [ 
     {
-       nombre: "MARI",
+       nombre: "MARI CARMEN",
        imagenSinFondo: "./img/mariCarmen.png",
        imagenConFondo: "./img/mariCarmen.jpg",
        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HGMrFv90mqQ?si=JnqdcNx7f3j7Gd41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
@@ -88,31 +144,52 @@ const profesionales = [
         iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/cxuB_bzfjl0?si=O20ZT3GrVd5OMv41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
-        nombre: "MARI",
+        nombre: "MARI CARMEN",
         imagenSinFondo: "./img/mariCarmenSecre.png",
         imagenConFondo: "./img/mariCarmenSecretaria.jpg",
         iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/LTMmezop_UI?si=z6dp73FV2hgvdqLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
+     {
+      nombre: "AINHOA",
+      imagenSinFondo: "./img/ainhoa.png",
+      imagenConFondo: "./img/AinhoaCard.png",
+      iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/2XBJkWlxNTU?si=NCxDIw-YC5TWaHf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+   }
 ]
 
 if(profesionales){
    const seccionTarjetas = document.querySelector(".seccionTarjetas")
    const modalVideo = document.querySelector(".modalVideo")
-   profesionales.forEach(item => {
+   profesionales.forEach((item, index) => {
       const card = document.createElement("div")
       card.classList.add("profesionalCard")
       const contenidoTarjeta = `
-               <div class="front">
+               <div class="front ${item.nombre}Card" id="${item.nombre.replace(/\s/g, "")}Front${index}">
                     <strong>${item.nombre}</strong>
                     <img src="${item.imagenSinFondo}" alt="${item.nombre}">
+                    <div class="verMasContainer" id="${item.nombre.replace(/\s/g, "")}VerMas${index}">
+                        <strong>VER MAS</strong>
+                    </div>
                </div>
-               <div class="back" style="background-image: url(${item.imagenConFondo})">
+               <div class="back" id="${item.nombre.replace(/\s/g, "")}Back${index}" style="background-image: url(${item.imagenConFondo})">
                     <i class='bx bx-play-circle'></i>
                </div>
       `
       card.innerHTML = contenidoTarjeta
       seccionTarjetas.appendChild(card)
-      card.addEventListener("click", () => {
+      const verMasBoton = document.getElementById(`${item.nombre.replace(/\s/g, "")}VerMas${index}`)
+      const cardFront = document.getElementById(`${item.nombre.replace(/\s/g, "")}Front${index}`)
+      const cardBack = document.getElementById(`${item.nombre.replace(/\s/g, "")}Back${index}`)
+
+      verMasBoton.addEventListener('click', () => {
+         cardFront.classList.add('girarFront')
+         cardBack.classList.add('girarBack')
+         setTimeout(() => {
+            cardFront.classList.remove('girarFront')
+            cardBack.classList.remove('girarBack')
+         }, 3000)
+      })
+      cardBack.addEventListener("click", () => {
          modalVideo.style.backgroundColor = "#00000082"
          modalVideo.style.zIndex = "200"
          modalVideo.style.opacity = "1"
@@ -126,21 +203,42 @@ if(profesionales){
             modalVideo.style.backgroundColor = "#00000000"
             modalVideo.style.zIndex = "-200"
             modalVideo.style.opacity = "0"
+            modalVideo.innerHTML = ""
          })
       })
    })
 }
+
+const imagenes = document.querySelectorAll(".imagenCarrousel")
+
+imagenes.forEach((item) => {
+   item.addEventListener('click', () => {
+      const modalVideo = document.querySelector(".modalVideo")
+      modalVideo.style.backgroundColor = "#00000082"
+         modalVideo.style.zIndex = "200"
+         modalVideo.style.opacity = "1"
+         modalVideo.innerHTML = `
+         <div class="botonCerrar" id="cerrarModal">
+            <i class='bx bx-x-circle'></i>
+         </div>
+         <img class="imagenCarrouselModal" src="${item.src}">`
+         const botonCerrar = document.getElementById("cerrarModal")
+         botonCerrar.addEventListener("click", () => {
+            modalVideo.style.backgroundColor = "#00000000"
+            modalVideo.style.zIndex = "-200"
+            modalVideo.style.opacity = "0"
+            modalVideo.innerHTML = ""
+         })
+      console.log(item.src)
+   })
+})
 
 ScrollReveal({ reset: true });
 ScrollReveal().reveal('.tituloSeccionUno', { delay: 350 });
 ScrollReveal().reveal('.seccionTarjetaTitulo', { delay: 350 });
 ScrollReveal().reveal('.seccionTarjetas', { delay: 350 });
 ScrollReveal().reveal('.servicioTitulo', { delay: 350 });
-ScrollReveal().reveal('.psicologia', { delay: 350 });
-ScrollReveal().reveal('.pedagogia', { delay: 350 });
-ScrollReveal().reveal('.logopedia', { delay: 350 });
-ScrollReveal().reveal('.terapiaOcupacional', { delay: 350 });
-ScrollReveal().reveal('.otrosServicios', { delay: 350 });
+ScrollReveal().reveal('.serviciosLista', { delay: 350 });
 ScrollReveal().reveal('.tituloNuestroEspacio', { delay: 350 });
 ScrollReveal().reveal('.carousel', { delay: 350 });
 ScrollReveal().reveal('.tituloContacto', { delay: 350 });
