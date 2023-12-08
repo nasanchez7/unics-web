@@ -251,10 +251,17 @@ box-shadow: 0px 0px 15px -8px #000000;
 
 .front img{
     position: absolute;
-    margin-left: 100px;
+    margin-left: 250px;
     left: 0;
     bottom: 0;
     height: 550px;
+}
+
+
+@media screen and (max-width: 1773px){
+    .front img{
+        margin-left: 100px;
+    }
 }
 
 .back{
