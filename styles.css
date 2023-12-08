@@ -32,12 +32,35 @@ nav ul{
     gap: 50px;
     list-style: none;
     margin-bottom: 0px;
+    position: relative;
 }
 
 nav ul li a{
     color: black;
     text-decoration: none;
     font-weight: 600;
+}
+
+.link{
+    margin-block: 2px;
+    position: relative;
+
+}
+.link::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+.link:hover::after{
+    transform: scaleX(1);
 }
 
 .menuMobile{
@@ -145,6 +168,8 @@ nav ul li a{
     -webkit-box-shadow: 0px 0px 15px -2px #000000; 
     box-shadow: 0px 0px 15px -2px #000000;
 }
+
+
 
 .seccionTarjeta{
     display: flex;
@@ -431,8 +456,8 @@ box-shadow: 0px 0px 15px -8px #000000;
 }
 
 .modalVideo iframe{
-    width: 560px!important;
-    height: 315px!important;
+    width: 70%!important;
+    height: 70%!important;
 }
 
 .botonCerrar i{
@@ -501,6 +526,22 @@ box-shadow: 0px 0px 15px -8px #000000;
     height: 100px;
 }
 
+
+.botonServicio{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.botonServicio button{
+    border: none;
+    color: white;
+    background-color: #C9C0FF;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: max-content;
+}
+
 .parrafoOculto{
     display: none;
 }
@@ -512,7 +553,7 @@ box-shadow: 0px 0px 15px -8px #000000;
     margin-top: 20px;
 }
 
-.servicio:hover h3{
+/* .servicio:hover h3{
     transition: all 0.5s;
     scale: 1.2;
 }
@@ -524,53 +565,53 @@ box-shadow: 0px 0px 15px -8px #000000;
 
 .servicio:hover .parrafoOculto{
     display: unset;
-}
+} */
 
 .psicologia{
     background-color: #fdb4ff7e;
 }
 
-.psicologia:hover{
+/* .psicologia:hover{
     background-color: #FDB4FF;
     transition: all 0.5s;
 }
-
+ */
 .pedagogia{
     background-color: #86E9FF7e;
 }
 
-.pedagogia:hover{
+/* .pedagogia:hover{
     background-color: #86E9FF;
     transition: all 0.5s;
-}
+} */
 
 .logopedia{
     background-color: #87FFDB7e;
 }
 
-.logopedia:hover{
+/* .logopedia:hover{
     background-color: #87FFDB;
     transition: all 0.5s;
-}
+} */
 
 .terapiaOcupacional{
     background-color: #C9C0FF7e;
 }
 
-.terapiaOcupacional:hover{
+/* .terapiaOcupacional:hover{
     background-color: #C9C0FF;
     transition: all 0.5s;
-}
+} */
 
 .otrosServicios{
     background-color: #EDFF7E7e;
 }
 
-.otrosServicios:hover{
+/* .otrosServicios:hover{
     background-color: #EDFF7E;
     transition: all 0.5s;
 }
-
+ */
 .seccionNuestroEspacio{
     margin-top: 80px;
     padding: 0px 10%;
@@ -727,8 +768,34 @@ box-shadow: 0px 0px 15px -8px #000000;
     font-size: 40px;
 }
 
+.redesContainer a i:hover{
+    color: #45BF45;
+    transition: all 0.5s;
+}
+
 .imagenCarrouselModal{
     height: 70%;
+}
+
+.cardContacto a{
+    text-decoration: none;
+    color: black;
+}
+
+.containerCreadoPor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.containerCreadoPor a{
+    text-decoration: none;
+    color: black;
+}
+
+.containerCreadoPor small{
+    text-align: center;
 }
 
 @media screen and (max-width: 1213px){
@@ -883,7 +950,10 @@ box-shadow: 0px 0px 15px -8px #000000;
         width: 100%;
         height: 450px;
     }
-    
+    .modalVideo iframe{
+        width: 80%!important;
+        height: 60%!important;
+    }
 }
 
 @media screen and (max-width: 881px){
@@ -966,6 +1036,14 @@ box-shadow: 0px 0px 15px -8px #000000;
     .imagenCarrouselModal {
         height: auto;
         width: 100%;
+    }
+    .modalVideo iframe{
+        width: 90%!important;
+        height: 35%!important;
+    }
+    .cardContacto {
+        padding: 40px;
+        margin: 0px 30px;
     }
 }
 

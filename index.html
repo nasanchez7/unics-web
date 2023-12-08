@@ -20,10 +20,13 @@
                 <img src="./img/logo.png" alt="Logo Unics">
             </a>
             <ul class="menuDesktop">
-                <li><a href="#conocenos">Conócenos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nuestroespacio">Nuestro Espacio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="#conocenos" class="link" id="conocenosLink">Conócenos</a>
+                </li>
+                <li><a href="#servicios" class="link" id="serviciosLink">Servicios</a></li>
+                <li><a href="#nuestroespacio" class="link" id="nuestroEspacioLink">Nuestro Espacio</a></li>
+                <li><a href="#contacto" class="link" id="contactoLink">Contacto</a></li>
+                <div class="line" id="line"></div>
             </ul>
             <div class="botonMenu">
                 <i class='bx bx-menu' id="botonMenu"></i>
@@ -51,7 +54,7 @@
         </div>
     </div>
     <svg class="waveUno" style="margin-bottom: -84px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffdde9" fill-opacity="1" d="M0,224L80,208C160,192,320,160,480,133.3C640,107,800,85,960,80C1120,75,1280,85,1360,90.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    <section class="seccionUno" >
+    <section class="seccionUno" id="conocenosSeccion">
         <div class="videoTexto">
             <div class="tituloSeccionUno">
                 <h2>Bienvenidos al centro <strong><span>Ú</span>nics</strong></h2>
@@ -120,10 +123,14 @@
         <div class="serviciosLista">
             <div class="servicio psicologia" >
                 <div class="servicioTextoImagen">
-                    <h3>PSICOLOGÍA</h3>
+                    <div class="botonServicio">
+                        <h3>PSICOLOGÍA</h3>
+                        <button id="verMasPsicologia">Ver mas</button>
+                        <button style="display: none;" id="ocultarPsicologia">Ocultar</button>
+                    </div>
                     <img src="./img/psicologia.png" alt="psicologia">
                 </div>
-                <div class="parrafoOculto">
+                <div class="parrafoOculto" id="parrafoPsicologia">
                     <ul>
                         <li>Intervención psicológica infanto-juvenil y adultos</li>
                         <li>Problemas de conducta</li>
@@ -140,10 +147,14 @@
             </div>
             <div class="servicio pedagogia" >
                 <div class="servicioTextoImagen">
-                    <h3>PEDAGOGÍA</h3>
+                    <div class="botonServicio">
+                        <h3>PEDAGOGÍA</h3>
+                        <button id="verMasPedagogia">Ver mas</button>
+                        <button style="display: none;" id="ocultarPedagogia">Ocultar</button>
+                    </div>
                     <img src="./img/pedagogia.png" alt="PEDAGOGÍA">
                 </div>
-                <div class="parrafoOculto">
+                <div class="parrafoOculto" id="parrafoPedadogia">
                     <ul>
                         <li>Diagnóstico e intervención en dificultades del aprendizaje y trastornos del neurodesarrollo.</li>
                         <li>Estimulación temprana</li>
@@ -160,10 +171,14 @@
             </div>
             <div class="servicio logopedia" >
                 <div class="servicioTextoImagen">
-                    <h3>LOGOPEDIA</h3>
+                    <div class="botonServicio">
+                        <h3>LOGOPEDIA</h3>
+                        <button id="verMasLogopedia">Ver mas</button>
+                        <button style="display: none;" id="ocultarLogopedia">Ocultar</button>
+                    </div>
                     <img src="./img/Logopedia.png" alt="LOGOPEDIA">
                 </div>
-                <div class="parrafoOculto">
+                <div class="parrafoOculto" id="parrafoLogopedia">
                     <ul>
                         <li>Diagnóstico e intervención en trastornos del habla y del lenguaje</li>
                         <li>Intervención en el aprendizaje y dificultades de la lecto-escritura</li>
@@ -175,10 +190,14 @@
             </div>
             <div class="servicio terapiaOcupacional" >
                 <div class="servicioTextoImagen">
-                    <h3>TERAPIA OCUPACIONAL</h3>
+                    <div class="botonServicio">
+                        <h3>TERAPIA OCUPACIONAL</h3>
+                        <button id="verMasTerapia">Ver mas</button>
+                        <button style="display: none;" id="ocultarTerapia">Ocultar</button>
+                    </div>
                     <img src="./img/terapiaOcupacional.png" alt="TERAPIA OCUPACIONAL">
                 </div>
-                <div class="parrafoOculto">
+                <div class="parrafoOculto" id="parrafoTerapia">
                     <ul>
                         <li>Estimulación temprana</li>
                         <li>Integración sensorial</li>
@@ -193,10 +212,14 @@
             </div>
             <div class="servicio otrosServicios" >
                 <div class="servicioTextoImagen">
-                    <h3>OTROS SERVICIOS</h3>
+                    <div class="botonServicio">
+                        <h3>OTROS SERVICIOS</h3>
+                        <button id="verMasOtros">Ver mas</button>
+                        <button style="display: none;" id="ocultarOtros">Ocultar</button>
+                    </div>
                     <img src="./img/otrosServicios.png" alt="OTROS SERVICIOS">
                 </div>
-                <div class="parrafoOculto">
+                <div class="parrafoOculto" id="parrafoOtros">
                     <ul>
                         <li>Formación en equipos docentes </li>
                         <li>Orientación familiar</li>
@@ -453,9 +476,9 @@
         </div>
         <div class="cardsContacto">
             <div class="cardContacto">
-                <i class='bx bxs-location-plus'></i>
+                <i class='bx bxs-map'></i>
                 <strong>Avenida Artal de Foces, 196.</strong>
-                <small>ALCÀSSER</small>
+                <small>ALCÀSSER, VALENCIA</small>
             </div>
             <div class="cardContacto">
                 <i class='bx bxs-phone' ></i>
@@ -465,16 +488,19 @@
             <div class="cardContacto">
                 <i class='bx bx-envelope'></i>
                 <strong>¿Prefieres escribirnos?</strong>
-                <small>info@unicspedagogia.com</small>
+                <small><a href="mailto:info@unicspedagogia.com">info@unicspedagogia.com</a></small>
             </div>
         </div>
         <p class="mensajeFinal">Tus comentarios y sugerencias son importantes para nosotros. Estamos comprometidos a proporcionarte un servicio excepcional, y tu opinión nos ayuda a mejorar continuamente. No dudes en compartir tus pensamientos con nosotros.
             Queremos escucharte y responder a tus necesidades. Gracias por elegirnos y confiar en nosotros.
             <br>¡Esperamos verte pronto!</p>
         <div class="redesContainer">
-            <a href=""><i class='bx bxl-instagram' ></i></i></a>
-            <a href=""><i class='bx bxl-facebook-circle' ></i></a>
-            <a href=""><i class='bx bxl-whatsapp' ></i></a>
+            <a href="https://www.instagram.com/unicspsicopedagogia/"><i class='bx bxl-instagram' ></i></i></a>
+            <a href="https://www.facebook.com/unicspedagogia"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="https://wa.me/34669383705"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+        <div class="containerCreadoPor">
+            <small><a href="https://wa.me/34643579605">Creado con ♥ por Irati Productora</a></small>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

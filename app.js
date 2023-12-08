@@ -48,7 +48,7 @@ botonVideoBarbara.addEventListener('click', () => {
          <div class="botonCerrar" id="cerrarModal">
             <i class='bx bx-x-circle'></i>
          </div>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/hMlASG2HJm4?si=bl4GNtW_gMPcWPpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+         <iframe class="videoIframe" src="https://www.youtube.com/embed/hMlASG2HJm4?si=bl4GNtW_gMPcWPpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
    const botonCerrar = document.getElementById("cerrarModal")
    botonCerrar.addEventListener("click", () => {
       modalVideo.style.backgroundColor = "#00000000"
@@ -93,67 +93,67 @@ const profesionales = [
        nombre: "MARI CARMEN",
        imagenSinFondo: "./img/mariCarmen.png",
        imagenConFondo: "./img/mariCarmen.jpg",
-       iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HGMrFv90mqQ?si=JnqdcNx7f3j7Gd41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+       iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/HGMrFv90mqQ?si=JnqdcNx7f3j7Gd41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
     },
     {
         nombre: "CAROLINA",
         imagenSinFondo: "./img/Carolina.png",
         imagenConFondo: "./img/carolina.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/fhTKHWMZDDg?si=nQlrqwnBAXcT2qh6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/fhTKHWMZDDg?si=nQlrqwnBAXcT2qh6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "AURORA",
         imagenSinFondo: "./img/aurora.png",
         imagenConFondo: "./img/aurora.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/nKpOnr623n0?si=CHJDGh224eEUD4Zy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/nKpOnr623n0?si=CHJDGh224eEUD4Zy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "MARIANA",
         imagenSinFondo: "./img/Mariana.png",
         imagenConFondo: "./img/mariana.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/29tA6mH2DQ0?si=G1cEnCUzvwavNSPJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/29tA6mH2DQ0?si=G1cEnCUzvwavNSPJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "JESSICA",
         imagenSinFondo: "./img/jesi.png",
         imagenConFondo: "./img/jessica.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/JSxqw1s9-xg?si=J7BGzaoifGZHTObi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/JSxqw1s9-xg?si=J7BGzaoifGZHTObi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "MARIA",
         imagenSinFondo: "./img/Maria.png",
         imagenConFondo: "./img/maria.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3jTloDQZh_I?si=a5lhfAaqvLnYZ5Hb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/3jTloDQZh_I?si=a5lhfAaqvLnYZ5Hb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "SARA",
         imagenSinFondo: "./img/Sara.png",
         imagenConFondo: "./img/sara.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/zwspsGrhep8?si=oPpkl4UHU_6v2vFC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/zwspsGrhep8?si=oPpkl4UHU_6v2vFC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "SONIA",
         imagenSinFondo: "./img/Sonia.png",
         imagenConFondo: "./img/sonia.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/_1W7VnoV-Co?si=QfMHKTiL_adFmdQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/_1W7VnoV-Co?si=QfMHKTiL_adFmdQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "JAVIER",
         imagenSinFondo: "./img/Javier.png",
         imagenConFondo: "./img/javier.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/cxuB_bzfjl0?si=O20ZT3GrVd5OMv41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/cxuB_bzfjl0?si=O20ZT3GrVd5OMv41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
         nombre: "MARI CARMEN",
         imagenSinFondo: "./img/mariCarmenSecre.png",
         imagenConFondo: "./img/mariCarmenSecretaria.jpg",
-        iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/LTMmezop_UI?si=z6dp73FV2hgvdqLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+        iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/LTMmezop_UI?si=z6dp73FV2hgvdqLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
      },
      {
       nombre: "AINHOA",
       imagenSinFondo: "./img/ainhoa.png",
       imagenConFondo: "./img/AinhoaCard.png",
-      iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/2XBJkWlxNTU?si=NCxDIw-YC5TWaHf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+      iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/2XBJkWlxNTU?si=NCxDIw-YC5TWaHf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
    }
 ]
 
@@ -245,3 +245,106 @@ ScrollReveal().reveal('.tituloContacto', { delay: 350 });
 ScrollReveal().reveal('.agradecimientoTexto', { delay: 350 });
 ScrollReveal().reveal('.cardsContacto', { delay: 350 });
 ScrollReveal().reveal('.mensajeFinal', { delay: 350 });
+
+const conocenosSeccion = document.getElementById('conocenosSeccion')
+const servicios = document.getElementById('servicios')
+const nuestroespacio = document.getElementById('nuestroespacio')
+const contacto = document.getElementById('contacto')
+
+function isSectionInView(elem) {
+   var distance = elem.getBoundingClientRect();
+    return (
+        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+    );
+}
+
+window.addEventListener('scroll', () =>{
+   if(isSectionInView(conocenosSeccion)){
+
+   }
+   if(isSectionInView(servicios)){
+      console.log("servicios")
+   }
+   if(isSectionInView(nuestroespacio)){
+      console.log("nuestroespacio")
+   }
+   if(isSectionInView(contacto)){
+      console.log("contacto")
+   }
+})
+
+
+const verMasPsicologia = document.getElementById('verMasPsicologia')
+const ocultarPsicologia = document.getElementById('ocultarPsicologia')
+
+verMasPsicologia.addEventListener('click', () => {
+   const parrafoPsicologia = document.getElementById('parrafoPsicologia')
+   parrafoPsicologia.style.display = "unset"
+   verMasPsicologia.style.display = "none"
+   ocultarPsicologia.style.display = "unset"
+   ocultarPsicologia.addEventListener('click', ()=> {
+      parrafoPsicologia.style.display = "none"
+      verMasPsicologia.style.display = "unset"
+      ocultarPsicologia.style.display = "none"
+   })
+})
+
+const verMasPedagogia = document.getElementById('verMasPedagogia')
+const ocultarPedagogia = document.getElementById('ocultarPedagogia')
+
+verMasPedagogia.addEventListener('click', () => {
+   const parrafoPedadogia = document.getElementById('parrafoPedadogia')
+   parrafoPedadogia.style.display = "unset"
+   verMasPedagogia.style.display = "none"
+   ocultarPedagogia.style.display = "unset"
+   ocultarPedagogia.addEventListener('click', ()=> {
+      parrafoPedadogia.style.display = "none"
+      verMasPedagogia.style.display = "unset"
+      ocultarPedagogia.style.display = "none"
+   })
+})
+
+const verMasLogopedia = document.getElementById('verMasLogopedia')
+const ocultarLogopedia = document.getElementById('ocultarLogopedia')
+
+verMasLogopedia.addEventListener('click', () => {
+   const parrafoLogopedia = document.getElementById('parrafoLogopedia')
+   parrafoLogopedia.style.display = "unset"
+   verMasLogopedia.style.display = "none"
+   ocultarLogopedia.style.display = "unset"
+   ocultarLogopedia.addEventListener('click', ()=> {
+      parrafoLogopedia.style.display = "none"
+      verMasLogopedia.style.display = "unset"
+      ocultarLogopedia.style.display = "none"
+   })
+})
+
+const verMasTerapia = document.getElementById('verMasTerapia')
+const ocultarTerapia = document.getElementById('ocultarTerapia')
+
+verMasTerapia.addEventListener('click', () => {
+   const parrafoTerapia = document.getElementById('parrafoTerapia')
+   parrafoTerapia.style.display = "unset"
+   verMasTerapia.style.display = "none"
+   ocultarTerapia.style.display = "unset"
+   ocultarTerapia.addEventListener('click', ()=> {
+      parrafoTerapia.style.display = "none"
+      verMasTerapia.style.display = "unset"
+      ocultarTerapia.style.display = "none"
+   })
+})
+
+const verMasOtros = document.getElementById('verMasOtros')
+const ocultarOtros = document.getElementById('ocultarOtros')
+
+verMasOtros.addEventListener('click', () => {
+   const parrafoOtros = document.getElementById('parrafoOtros')
+   parrafoOtros.style.display = "unset"
+   verMasOtros.style.display = "none"
+   ocultarOtros.style.display = "unset"
+   ocultarOtros.addEventListener('click', ()=> {
+      parrafoOtros.style.display = "none"
+      verMasOtros.style.display = "unset"
+      ocultarOtros.style.display = "none"
+   })
+})
