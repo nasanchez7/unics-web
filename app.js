@@ -246,32 +246,7 @@ ScrollReveal().reveal('.agradecimientoTexto', { delay: 350 });
 ScrollReveal().reveal('.cardsContacto', { delay: 350 });
 ScrollReveal().reveal('.mensajeFinal', { delay: 350 });
 
-const conocenosSeccion = document.getElementById('conocenosSeccion')
-const servicios = document.getElementById('servicios')
-const nuestroespacio = document.getElementById('nuestroespacio')
-const contacto = document.getElementById('contacto')
 
-function isSectionInView(elem) {
-   var distance = elem.getBoundingClientRect();
-    return (
-        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
-    );
-}
-
-window.addEventListener('scroll', () =>{
-   if(isSectionInView(conocenosSeccion)){
-
-   }
-   if(isSectionInView(servicios)){
-      console.log("servicios")
-   }
-   if(isSectionInView(nuestroespacio)){
-      console.log("nuestroespacio")
-   }
-   if(isSectionInView(contacto)){
-      console.log("contacto")
-   }
-})
 
 
 const verMasPsicologia = document.getElementById('verMasPsicologia')
@@ -347,4 +322,88 @@ verMasOtros.addEventListener('click', () => {
       verMasOtros.style.display = "unset"
       ocultarOtros.style.display = "none"
    })
+})
+
+const linkConocenos = document.getElementById("conocenosLink")
+const lineaConocenos = document.getElementById("lineaConocenos")
+
+linkConocenos.addEventListener('mouseover', () => {
+   lineaConocenos.style.width = "100%"
+})
+
+linkConocenos.addEventListener('mouseout', () => {
+   lineaConocenos.style.width = "0%"
+})
+
+const serviciosLink = document.getElementById("serviciosLink")
+const lineaServicios = document.getElementById("lineaServicios")
+
+serviciosLink.addEventListener('mouseover', () => {
+   lineaServicios.style.width = "100%"
+})
+
+serviciosLink.addEventListener('mouseout', () => {
+   lineaServicios.style.width = "0%"
+})
+
+const nuestroEspacioLink = document.getElementById("nuestroEspacioLink")
+const lineaNuestroEspacio = document.getElementById("lineaNuestroEspacio")
+
+nuestroEspacioLink.addEventListener('mouseover', () => {
+   lineaNuestroEspacio.style.width = "100%"
+})
+
+nuestroEspacioLink.addEventListener('mouseout', () => {
+   lineaNuestroEspacio.style.width = "0%"
+})
+
+const contactoLink = document.getElementById("contactoLink")
+const lineaContacto = document.getElementById("lineaContacto")
+
+contactoLink.addEventListener('mouseover', () => {
+   lineaContacto.style.width = "100%"
+})
+
+contactoLink.addEventListener('mouseout', () => {
+   lineaContacto.style.width = "0%"
+})
+
+const conocenosSeccion = document.getElementById('conocenosSeccion')
+const servicios = document.getElementById('servicios')
+const nuestroespacio = document.getElementById('nuestroespacio')
+const contacto = document.getElementById('contacto')
+
+function isSectionInView(elem) {
+   var distance = elem.getBoundingClientRect();
+    return (
+        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+    );
+}
+
+window.addEventListener('scroll', () =>{
+   lineaConocenos.style.width = "0%"
+   if(isSectionInView(conocenosSeccion)){
+      lineaServicios.style.width = "0%"
+      lineaNuestroEspacio.style.width = "0%"
+      lineaContacto.style.width = "0%"
+      lineaConocenos.style.width = "100%"
+   }
+   if(isSectionInView(servicios)){
+      lineaConocenos.style.width = "0%"
+      lineaNuestroEspacio.style.width = "0%"
+      lineaContacto.style.width = "0%"
+      lineaServicios.style.width = "100%"
+   }
+   if(isSectionInView(nuestroespacio)){
+      lineaServicios.style.width = "0%"
+      lineaConocenos.style.width = "0%"
+      lineaContacto.style.width = "0%"
+      lineaNuestroEspacio.style.width = "100%"
+   }
+   if(isSectionInView(contacto)){
+      lineaServicios.style.width = "0%"
+      lineaConocenos.style.width = "0%"
+      lineaNuestroEspacio.style.width = "0%"
+      lineaContacto.style.width = "100%"
+   }
 })
