@@ -19,7 +19,11 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 101;
+}
+
+nav img{
+    width: 140px;
 }
 
 nav a{
@@ -50,28 +54,32 @@ nav ul li{
 .lineaConocenos{
     width: 0%;
     height: 2px;
-    background-color: black;
+    background: rgb(242,62,118);
+    background: linear-gradient(83deg, rgba(242,62,118,1) 0%, rgba(69,191,69,1) 100%);
     transition: all 0.5s;
 }
 
 .lineaServicios{
     width: 0%;
     height: 2px;
-    background-color: black;
+    background: rgb(242,62,118);
+    background: linear-gradient(83deg, rgba(242,62,118,1) 0%, rgba(69,191,69,1) 100%);
     transition: all 0.5s;
 }
 
 .lineaNuestroEspacio{
     width: 0%;
     height: 2px;
-    background-color: black;
+    background: rgb(242,62,118);
+    background: linear-gradient(83deg, rgba(242,62,118,1) 0%, rgba(69,191,69,1) 100%);
     transition: all 0.5s;
 }
 
 .lineaContacto{
     width: 0%;
     height: 2px;
-    background-color: black;
+    background: rgb(242,62,118);
+    background: linear-gradient(83deg, rgba(242,62,118,1) 0%, rgba(69,191,69,1) 100%);
     transition: all 0.5s;
 }
 
@@ -127,6 +135,10 @@ nav ul li{
 .headerTexto span{
     color: #F23E76;
     font-weight: 300!important;
+}
+
+.headerTexto small{
+    font-size: 18px;
 }
 
 .seccionUno{
@@ -285,7 +297,6 @@ box-shadow: 0px 0px 15px -8px #000000;
 
 .back{
     background-color: white;
-    transform: perspective(500px) rotateY(180deg);
     display: flex;
     height: max-content;
     align-items: center;
@@ -401,13 +412,15 @@ box-shadow: 0px 0px 15px -8px #000000;
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     transition: 0.5s all;
     border-radius: 50px;
     -webkit-box-shadow: 0px 0px 15px -8px #000000; 
 box-shadow: 0px 0px 15px -8px #000000;
     border-radius: 50px;
     padding: 0px 0px!important;
+    opacity: 1;
+    z-index: 100;
 }
 
 .profesionalCard .front img{
@@ -423,7 +436,7 @@ box-shadow: 0px 0px 15px -8px #000000;
     position: absolute;
     width: 100%!important;
     height: 100%!important;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     transition: 0.5s all;
     border-radius: 50px;
     -webkit-box-shadow: 0px 0px 15px -8px #000000; 
@@ -434,6 +447,8 @@ box-shadow: 0px 0px 15px -8px #000000;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    opacity: 0;
+    z-index: 99;
 }
 
 .profesionalCard .back i{
@@ -457,13 +472,13 @@ box-shadow: 0px 0px 15px -8px #000000;
     cursor: pointer;
 }
 
-.girarFront{
+/* .girarFront{
     transform: perspective(500px) rotateY(180deg);
 }
 
 .girarBack{
     transform: perspective(500px) rotateY(360deg);
-}
+} */
 
 
 .modalVideo{
@@ -492,8 +507,8 @@ box-shadow: 0px 0px 15px -8px #000000;
     right: 0;
     font-size: 40px;
     color: white;
-    margin-right: 80px;
-    margin-top: 50px;
+    margin-right: 30px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -750,6 +765,8 @@ box-shadow: 0px 0px 15px -8px #000000;
     -webkit-box-shadow: 0px 0px 15px -8px #000000; 
     box-shadow: 0px 0px 15px -8px #000000;
     background-color: white;
+    text-decoration: none;
+    color: black;
 }
 
 .cardContacto i{
@@ -794,13 +811,23 @@ box-shadow: 0px 0px 15px -8px #000000;
     font-size: 40px;
 }
 
-.redesContainer a i:hover{
-    color: #45BF45;
+.redesContainer .ig i:hover{
+    color: #F2167D;
+    transition: all 0.5s;
+}
+
+.redesContainer .fc i:hover{
+    color: #0C87F2;
+    transition: all 0.5s;
+}
+
+.redesContainer .wp i:hover{
+    color: green;
     transition: all 0.5s;
 }
 
 .imagenCarrouselModal{
-    height: 70%;
+    height: 90%;
 }
 
 .cardContacto a{
@@ -984,7 +1011,7 @@ box-shadow: 0px 0px 15px -8px #000000;
 
 @media screen and (max-width: 881px){
     .imagenCarrouselModal{
-        height: 50%;
+        height: 70%;
     }
 }
 
@@ -1112,6 +1139,9 @@ box-shadow: 0px 0px 15px -8px #000000;
         width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+    .headerTexto small {
+        font-size: 13px;
     }
 }
 

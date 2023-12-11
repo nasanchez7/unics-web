@@ -154,7 +154,7 @@ const profesionales = [
       imagenSinFondo: "./img/ainhoa.png",
       imagenConFondo: "./img/AinhoaCard.png",
       iframeLink: '<iframe class="videoIframe" src="https://www.youtube.com/embed/2XBJkWlxNTU?si=NCxDIw-YC5TWaHf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
-   }
+      }
 ]
 
 if(profesionales){
@@ -182,11 +182,15 @@ if(profesionales){
       const cardBack = document.getElementById(`${item.nombre.replace(/\s/g, "")}Back${index}`)
 
       verMasBoton.addEventListener('click', () => {
-         cardFront.classList.add('girarFront')
-         cardBack.classList.add('girarBack')
+         cardFront.style.opacity = "0"
+         cardFront.style.zIndex = 99
+         cardBack.style.opacity = "1"
+         cardBack.style.zIndex = 100
          setTimeout(() => {
-            cardFront.classList.remove('girarFront')
-            cardBack.classList.remove('girarBack')
+            cardFront.style.opacity = "1"
+            cardFront.style.zIndex = 100
+            cardBack.style.opacity = "0"
+            cardBack.style.zIndex = 99
          }, 3000)
       })
       cardBack.addEventListener("click", () => {
@@ -233,18 +237,18 @@ imagenes.forEach((item) => {
    })
 })
 
-ScrollReveal({ reset: true });
-ScrollReveal().reveal('.tituloSeccionUno', { delay: 350 });
-ScrollReveal().reveal('.seccionTarjetaTitulo', { delay: 350 });
-ScrollReveal().reveal('.seccionTarjetas', { delay: 350 });
-ScrollReveal().reveal('.servicioTitulo', { delay: 350 });
-ScrollReveal().reveal('.serviciosLista', { delay: 350 });
-ScrollReveal().reveal('.tituloNuestroEspacio', { delay: 350 });
-ScrollReveal().reveal('.carousel', { delay: 350 });
-ScrollReveal().reveal('.tituloContacto', { delay: 350 });
-ScrollReveal().reveal('.agradecimientoTexto', { delay: 350 });
-ScrollReveal().reveal('.cardsContacto', { delay: 350 });
-ScrollReveal().reveal('.mensajeFinal', { delay: 350 });
+ScrollReveal();
+ScrollReveal({ reset: true }).reveal('.tituloSeccionUno', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.seccionTarjetaTitulo', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.seccionTarjetas', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.servicioTitulo', { delay: 350 });
+ScrollReveal({ reset: false }).reveal('.serviciosLista', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.tituloNuestroEspacio', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.carousel', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.tituloContacto', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.agradecimientoTexto', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.cardsContacto', { delay: 350 });
+ScrollReveal({ reset: true }).reveal('.mensajeFinal', { delay: 350 });
 
 
 
